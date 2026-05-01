@@ -28,7 +28,7 @@
             android:id="@+id/btn_close"
             android:layout_width="32dp"
             android:layout_height="32dp"
-            android:background="?attr/selectableItemBackgroundBorderless"
+            android:background="@android:color/transparent"
             android:src="@android:drawable/ic_menu_close_clear_cancel"
             android:contentDescription="关闭"
             android:tint="#AAAAAA" />
