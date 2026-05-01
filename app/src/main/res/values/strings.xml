@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">加密聊天</string>
+    <string name="accessibility_service_description">加密聊天无障碍服务：用于自动识别屏幕上的密文、监听剪贴板变化、以及将加解密结果自动填入聊天输入框。此服务不会收集或上传任何数据，所有操作均在本地完成。</string>
+</resources>

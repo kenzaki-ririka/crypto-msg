@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 暗色主题基调 -->
+    <color name="bg_primary">#0D0D1A</color>
+    <color name="bg_surface">#141428</color>
+    <color name="bg_card">#1A1A30</color>
+    <color name="card_stroke">#252545</color>
+    <color name="divider">#1F1F38</color>
+
+    <!-- 强调色 -->
+    <color name="accent_primary">#6C63FF</color>
+    <color name="accent_secondary">#00C9A7</color>
+    <color name="green_accent">#00E676</color>
+    <color name="red_accent">#FF5252</color>
+
+    <!-- 文本色 -->
+    <color name="text_primary">#EEEEFF</color>
+    <color name="text_secondary">#9999BB</color>
+    <color name="text_tertiary">#666688</color>
+
+    <!-- 状态栏 / 导航栏 -->
+    <color name="status_bar">#0A0A15</color>
+</resources>
