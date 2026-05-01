@@ -4,3 +4,7 @@
 
 # Keep accessibility service
 -keep class com.encryptchat.service.CryptoAccessibilityService { *; }
+
+# Tink crypto library
+-dontwarn javax.annotation.**
+-dontwarn javax.annotation.concurrent.**
