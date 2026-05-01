@@ -213,8 +213,7 @@ class FloatingBubbleService : Service() {
             WindowManager.LayoutParams.MATCH_PARENT,
             WindowManager.LayoutParams.WRAP_CONTENT,
             WindowManager.LayoutParams.TYPE_APPLICATION_OVERLAY,
-            WindowManager.LayoutParams.FLAG_NOT_TOUCH_MODAL or
-                    WindowManager.LayoutParams.FLAG_WATCH_OUTSIDE_TOUCH,
+            WindowManager.LayoutParams.FLAG_NOT_TOUCH_MODAL,
             PixelFormat.TRANSLUCENT
         ).apply {
             gravity = Gravity.BOTTOM
@@ -347,13 +346,7 @@ class FloatingBubbleService : Service() {
         // 关闭面板
         btnClose.setOnClickListener { hidePanel() }
 
-        // 点击面板外部关闭
-        panel.setOnTouchListener { _, event ->
-            if (event.action == MotionEvent.ACTION_OUTSIDE) {
-                hidePanel()
-                true
-            } else false
-        }
+        // 关闭面板仅通过关闭按钮（已在上面绑定 btn_close）
     }
 
     /**

@@ -27,6 +27,19 @@ jobs:
       - name: Generate Gradle Wrapper
         run: gradle wrapper --gradle-version 8.2
 
+      - name: Generate Keystore
+        run: |
+          mkdir -p keystore
+          keytool -genkeypair \
+            -alias encryptchat \
+            -keyalg RSA \
+            -keysize 2048 \
+            -validity 10000 \
+            -keystore keystore/release.jks \
+            -storepass encryptchat2024 \
+            -keypass encryptchat2024 \
+            -dname "CN=EncryptChat, OU=Dev, O=EncryptChat, L=Tokyo, ST=Tokyo, C=JP"
+
       - name: Build Release APK
         run: ./gradlew assembleRelease
 
